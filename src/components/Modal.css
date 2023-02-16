@@ -3,18 +3,32 @@
       margin-top: 5px;
   }
 
-  .modalBtn1 {
-    position: relative;
+  .modalBtn1 {        
+    background-image: linear-gradient(to right, #614385 0%, #516395  51%, #614385  100%);
+    margin-top: 10px;
+    margin-bottom: -10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 12px 24px;
     cursor: pointer;
-    color: #ffffff;
-    background: purple;
-    border-radius: 5px;
-  }
-  
+    position: relative;
+    border-style: none;
+    }
+
+    .modalBtn1:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+    }
+     
 
   .overlay1 {
     background-color: rgba(0, 0, 0, 0.5);
