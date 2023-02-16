@@ -1,17 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react';
+import Modal from './Modal';
+import './Modal.css'
 
 const TextBox = () => {
+
+  const [openModal, setOpenModal] = useState(false)
+
   return (
     <div className='text-box' >
         <h3>First Class Ticket</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. 
-            Duis aute irure dolor in reprehenderit in voluptate velit esse 
-            cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, 
-            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div>
+          <button className='modalBtn1' onClick={() => setOpenModal(true)} >Start</button>
+          <Modal open={openModal} onClose={()=> setOpenModal(false)} />
+        </div>
     </div>
   )
 }
