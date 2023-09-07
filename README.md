@@ -1,4 +1,4 @@
-# Parallax Scrolling
+# Pop Up Window
 
 This site was built with HTML, CSS, JavaScript and ReactJS. It was deployed on Vercel. It is responsive for mobile and tablet.
 
